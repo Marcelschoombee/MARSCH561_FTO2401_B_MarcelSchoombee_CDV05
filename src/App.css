@@ -1,52 +1,94 @@
 
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Header */
 .header--div {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    font-family:'Poppins', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .header--img {
   margin-right: 10px;
-  width: 100px;
+  width: 10vw; /* Relative width for responsiveness */
+  max-width: 100px; /* Max width for larger screens */
 }
 
 .nav-bar {
   display: flex;
   align-items: center;
+  flex-wrap: wrap; /* Allow wrapping */
 }
 
+/* Card List */
 .cards-list {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
   overflow-x: auto;
+  padding: 10px;
 }
 
+/* Individual Card */
 .card {
-  width: 175px;
-  padding: 10px 10px;
-  font-size: 12px;
-  flex: 0 0 auto;         /* ADD */
-  display: flex;          /* ADD */
-  flex-direction: column; /* ADD */
+  width: 45vw; /* Relative width for responsiveness */
+  max-width: 175px; /* Max width for larger screens */
+  padding: 10px;
+  font-size: 1rem; /* Use rem for font size */
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  background-color: aliceblue;
-  border-color: black;
-  border-width: 1px;
+  background-color: rgb(197, 201, 206);
+  border: 1px solid black;
+  border-radius: 9px;
 }
 
 .card--image {
   width: 100%;
   border-radius: 9px;
-  border-color: black;
-  border-width: 1px;
+  border: 1px solid black;
   margin-bottom: 9px;
 }
 
-/* ADD */
 .card--title {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Media Queries for Different Screen Sizes */
+@media (max-width: 600px) {
+  .header--div {
+    justify-content: center; /* Center align on small screens */
+  }
+
+  .header--img {
+    width: 20vw;
+    margin-right: 5px;
+  }
+
+  .card {
+    width: 80vw;
+    max-width: none;
+    font-size: 0.9rem;
+  }
+
+  .cards-list {
+    gap: 10px;
+  }
+
+  
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+  background-color: darkgrey;
 }
