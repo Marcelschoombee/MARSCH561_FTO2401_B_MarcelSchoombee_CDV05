@@ -3,9 +3,9 @@ function Header() {
         <>
         <div>
             <div className="header--div">
-                <nav>
+                <nav className="nav-bar">
                     <img src="./assets/DesignImage.png" alt="Logo Image" className="header--img" />
-                    <h2>Marcel Schoombee Developer</h2>
+                    <h2>Marcel Schoombee  |||  Junior React Developer</h2>
                 </nav>
             </div>
 

@@ -1,11 +1,52 @@
 
 .header--div {
     display: flex;
+    align-items: center;
     padding: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Poppins', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(255, 255, 255);
 }
 
 .header--img {
-  width: 30px;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card {
+  width: 175px;
+  padding: 10px 10px;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+  position: relative;
+  background-color: aliceblue;
+  border-color: black;
+  border-width: 1px;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  border-color: black;
+  border-width: 1px;
+  margin-bottom: 9px;
+}
+
+/* ADD */
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
