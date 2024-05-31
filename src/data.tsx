@@ -4,6 +4,7 @@ export default [
         title: "Exapmle of CV webpage",
         description: "This is a example of a CV website using CSS, HTML and JavaScript",
         coverImg: "Image1.png",
+        url: "https://sdf08.netlify.app"
 
 
     },
@@ -12,6 +13,7 @@ export default [
         title: "Shopping list App",
         description: "A shopping list App build using CSS, HTML and JavaScript",
         coverImg: "Image2.png",
+        url: "https://marsch561fto2401bmarcelschoombeesdf07.netlify.app",
 
     },
 
@@ -20,6 +22,7 @@ export default [
         title: "Meme Generator",
         description: "A meme generator using React",
         coverImg: "Image3.png",
+        url: "https://portfoliositemc.netlify.app",
 
     },
 ]

@@ -18,7 +18,6 @@ body {
   margin-right: 10px;
   width: 5vw; /* Relative width for responsiveness */
   max-width: 100px; /* Max width for larger screens */
-  
 }
 
 .nav-bar {
@@ -56,7 +55,6 @@ body {
   border-radius: 9px;
   border: 1px solid black;
   margin-bottom: 9px;
-  
 }
 
 .card--title {
@@ -84,8 +82,6 @@ body {
   .cards-list {
     gap: 10px;
   }
-
-  
 }
 
 .footer {
