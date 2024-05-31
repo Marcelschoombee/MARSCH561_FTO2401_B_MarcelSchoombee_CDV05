@@ -14,4 +14,12 @@ export default [
         coverImg: "Image2.png",
 
     },
+
+    {
+        id: 3,
+        title: "Meme Generator",
+        description: "A meme generator using React",
+        coverImg: "Image3.png",
+
+    },
 ]
